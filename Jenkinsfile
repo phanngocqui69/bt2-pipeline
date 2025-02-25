@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'tel4vn' }
     stages {
         stage('Build') {
             steps {
@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploy auto mation...'
+                echo 'Deploying...'
                 // Thực hiện các bước deploy
             }
         }
